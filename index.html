@@ -3,102 +3,92 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jiumei 九妹 • On-chain</title>
+  <title>九妹 ⚡ On-chain</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
   <style>
     body {
-      margin: 0;
-      padding: 0;
-      font-family: "Poppins", "Noto Sans SC", sans-serif;
-      background: linear-gradient(135deg, #c79df4, #f7a8e2, #ffe1f8);
-      background-size: 200% 200%;
-      animation: gradientShift 8s ease infinite;
-      color: #fff;
+      font-family: 'Poppins', 'Space Grotesk', sans-serif;
+      background: radial-gradient(circle at top left, #eab8ff, #d889ff, #b36bff);
       display: flex;
-      flex-direction: column;
-      align-items: center;
       justify-content: center;
+      align-items: center;
       min-height: 100vh;
-      text-align: center;
-    }
-
-    @keyframes gradientShift {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
+      margin: 0;
+      color: #fff;
     }
 
     .card {
       background: rgba(255, 255, 255, 0.15);
-      backdrop-filter: blur(10px);
-      border-radius: 24px;
+      border-radius: 30px;
+      box-shadow: 0 8px 30px rgba(163, 84, 255, 0.25);
+      backdrop-filter: blur(12px);
+      text-align: center;
       padding: 40px 30px;
-      width: 90%;
-      max-width: 360px;
-      box-shadow: 0 8px 30px rgba(0,0,0,0.2);
-      animation: fadeIn 1.2s ease;
+      width: 340px;
     }
 
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    img.avatar {
-      width: 100px;
-      height: 100px;
+    .avatar {
+      width: 90px;
+      height: 90px;
       border-radius: 50%;
-      border: 2px solid rgba(255, 255, 255, 0.4);
+      object-fit: cover;
+      border: 3px solid rgba(255,255,255,0.5);
       margin-bottom: 15px;
-      box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
     }
 
     h1 {
-      font-size: 26px;
-      margin: 8px 0 4px;
+      font-size: 1.7rem;
+      font-weight: 700;
+      margin: 0;
+      background: linear-gradient(90deg, #fff, #ffd6f9);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 0 0 10px rgba(255, 155, 255, 0.5);
     }
 
-    p.desc {
-      font-size: 14px;
+    p.subtitle {
+      font-size: 0.9rem;
       opacity: 0.9;
-      margin-bottom: 30px;
+      margin: 8px 0 25px;
     }
 
-    a.link {
+    .btn {
       display: block;
-      margin: 10px auto;
-      padding: 12px 0;
-      width: 85%;
+      width: 100%;
+      padding: 12px;
+      border-radius: 12px;
+      margin: 10px 0;
       background: rgba(255, 255, 255, 0.2);
-      color: white;
-      border-radius: 14px;
+      color: #fff;
+      font-weight: 600;
       text-decoration: none;
-      font-weight: 500;
-      backdrop-filter: blur(6px);
-      transition: all 0.25s ease;
+      backdrop-filter: blur(4px);
+      transition: all 0.3s ease;
     }
 
-    a.link:hover {
-      background: rgba(255, 255, 255, 0.35);
+    .btn:hover {
+      background: linear-gradient(90deg, #ffb8ff, #d28bff);
+      box-shadow: 0 0 12px rgba(255, 180, 255, 0.6);
       transform: translateY(-2px);
     }
 
     footer {
-      font-size: 11px;
-      margin-top: 25px;
-      opacity: 0.7;
+      margin-top: 20px;
+      font-size: 0.8rem;
+      opacity: 0.8;
     }
   </style>
 </head>
 <body>
   <div class="card">
-    <img src="https://i.imgur.com/z1o9J0O.png" alt="avatar" class="avatar">
+    <img src="https://raw.githubusercontent.com/clssyrje/jm/refs/heads/main/images%20(1).jfif" alt="avatar" class="avatar">
     <h1>九妹 ⚡ On-chain</h1>
-    <p class="desc">Crypto & Web3 Research | BTC Believer 💫</p>
+    <p class="subtitle">Crypto & Web3 Research | BTC Believer 🌙</p>
 
-    <a href="https://x.com/mylintong" class="link">🐦 我的 X 主页</a>
-    <a href="https://gmgn.ai/r/MS5Y2fk9" class="link">💎 GMGN AI智能工具</a>
-    <a href="https://t.me/+jtwO5-TZgXM2OTg1" class="link">💬 Telegram 群</a>
-    <a href="mailto:mylintong@gmail.com" class="link">📧 联系我</a>
+    <a href="https://x.com/mylintong" class="btn">🍓 我的 X 首页</a>
+    <a href="https://gmgn.ai/r/MS5Y2fk9" class="btn">💎 GMGN AI智能工具</a>
+    <a href="https://t.me/+jtwO5-TZgXM2OTg1" class="btn">💬 Telegram 群</a>
+    <a href="mailto:mylintong@gmail.com" class="btn">📩 联系我</a>
 
     <footer>© 2025 Jiumei | On-chain Vibes</footer>
   </div>

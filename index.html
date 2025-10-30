@@ -3,58 +3,104 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jiumei 九妹 • Crypto & Web3</title>
+  <title>Jiumei 九妹 • On-chain</title>
   <style>
     body {
-      background: linear-gradient(135deg, #c79df4, #f7a8e2);
-      color: white;
-      font-family: "Poppins", "Noto Sans SC", sans-serif;
-      text-align: center;
-      padding: 60px 20px;
       margin: 0;
+      padding: 0;
+      font-family: "Poppins", "Noto Sans SC", sans-serif;
+      background: linear-gradient(135deg, #c79df4, #f7a8e2, #ffe1f8);
+      background-size: 200% 200%;
+      animation: gradientShift 8s ease infinite;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
     }
+
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(10px);
+      border-radius: 24px;
+      padding: 40px 30px;
+      width: 90%;
+      max-width: 360px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+      animation: fadeIn 1.2s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    img.avatar {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      border: 2px solid rgba(255, 255, 255, 0.4);
+      margin-bottom: 15px;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+    }
+
     h1 {
-      font-size: 32px;
-      margin-bottom: 8px;
+      font-size: 26px;
+      margin: 8px 0 4px;
     }
-    p {
-      font-size: 15px;
+
+    p.desc {
+      font-size: 14px;
       opacity: 0.9;
-      margin-bottom: 40px;
+      margin-bottom: 30px;
     }
-    a {
+
+    a.link {
       display: block;
       margin: 10px auto;
-      width: 220px;
-      padding: 12px;
-      background: rgba(255, 255, 255, 0.15);
-      border-radius: 16px;
+      padding: 12px 0;
+      width: 85%;
+      background: rgba(255, 255, 255, 0.2);
       color: white;
+      border-radius: 14px;
       text-decoration: none;
       font-weight: 500;
-      transition: all 0.25s ease;
       backdrop-filter: blur(6px);
+      transition: all 0.25s ease;
     }
-    a:hover {
-      background: rgba(255, 255, 255, 0.3);
+
+    a.link:hover {
+      background: rgba(255, 255, 255, 0.35);
       transform: translateY(-2px);
     }
+
     footer {
-      margin-top: 50px;
-      font-size: 12px;
+      font-size: 11px;
+      margin-top: 25px;
       opacity: 0.7;
     }
   </style>
 </head>
 <body>
-  <h1>九妹 ⚡ On-chain</h1>
-  <p>Crypto & Web3 Research | BTC Believer 💫</p>
+  <div class="card">
+    <img src="https://i.imgur.com/z1o9J0O.png" alt="avatar" class="avatar">
+    <h1>九妹 ⚡ On-chain</h1>
+    <p class="desc">Crypto & Web3 Research | BTC Believer 💫</p>
 
-  <a href="https://x.com/jiumei">🐦 我的X主页</a>
-  <a href="https://gmgn.ai/r/MS5Y2fk9">💎 GMGN 数据面板</a>
-  <a href="https://t.me/xxx">💬 Telegram 群</a>
-  <a href="mailto:hello@jiumei.xyz">📧 联系我</a>
+    <a href="https://x.com/mylintong" class="link">🐦 我的 X 主页</a>
+    <a href="https://gmgn.ai/r/MS5Y2fk9" class="link">💎 GMGN AI智能工具</a>
+    <a href="https://t.me/+jtwO5-TZgXM2OTg1" class="link">💬 Telegram 群</a>
+    <a href="mailto:mylintong@gmail.com" class="link">📧 联系我</a>
 
-  <footer>© 2025 Jiumei | On-chain Vibes</footer>
+    <footer>© 2025 Jiumei | On-chain Vibes</footer>
+  </div>
 </body>
 </html>
